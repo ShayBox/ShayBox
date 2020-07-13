@@ -1,16 +1,27 @@
-### Hi there 👋
+# ShayBox
 
-<!--
-**ShayBox/ShayBox** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Welcome to my profile!
 
-Here are some ideas to get you started:
+## Repositories
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+#### Bash
+- [Mon2Cam](https://github.com/ShayBox/Mon2Cam) - Workaround for multi-monitor Discord screensharing 
+
+#### Java
+- [DropChest](https://github.com/ShayBox/DropChest) - A port of the original DropChest plugin
+- [DropChest2](https://github.com/ShayBox/DropChest2) - A rewrite of the original DropChest plugin
+- [Durability101](https://github.com/ShayBox/Durability101) - A rewrite of the original Durability101 mod
+
+#### Go
+- [MultiMC-Twitch](https://github.com/ShayBox/MultiMC-Twitch) - A go program to add curseforge support to MultiMC
+- [LatestSpigot](https://github.com/ShayBox/LatestSpigot) - A go program to build the latest spigot
+- [USBMC](https://github.com/ShayBox/USB-MC) - A go program for portable Minecraft
+
+#### Typescript/Javascript
+- [API](https://github.com/ShayBox/API) - My custom API
+- [EventEmitter-promisify](https://github.com/ShayBox/EventEmitter-promisify) - Await events
+- [Array-equals](https://github.com/ShayBox/Array-equals) - Compare arrays
+
+#### Other
+- [dotfiles](https://github.com/ShayBox/dotfiles) - My linux dotfiles
+- [linux-zen-vfio](https://github.com/ShayBox/linux-zen-vfio) - My fork of linux-zen with vfio patches
