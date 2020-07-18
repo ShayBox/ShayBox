@@ -18,9 +18,9 @@ Welcome to my profile!
 - [USBMC](https://github.com/ShayBox/USB-MC) - A go program for portable Minecraft
 
 #### Typescript/Javascript
-- [API](https://github.com/ShayBox/API) - My custom API
-- [EventEmitter-promisify](https://github.com/ShayBox/EventEmitter-promisify) - Await events
-- [Array-equals](https://github.com/ShayBox/Array-equals) - Compare arrays
+- [API](https://github.com/ShayBox/API) - My custom API backend available [here](https://api.shaybox.com/)
+- [EventEmitter-promisify](https://github.com/ShayBox/EventEmitter-promisify) - EventEmitter-promisify built-in to the event prototype 
+- [Array-equals](https://github.com/ShayBox/Array-equals) - Array-equals built-in to the array prototype 
 
 #### Other
 - [dotfiles](https://github.com/ShayBox/dotfiles) - My linux dotfiles
