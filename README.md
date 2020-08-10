@@ -4,9 +4,6 @@ Welcome to my profile!
 
 ## Repositories
 
-#### Bash
-- [Mon2Cam](https://github.com/ShayBox/Mon2Cam) - Workaround for multi-monitor Discord screensharing 
-
 #### Java
 - [DropChest](https://github.com/ShayBox/DropChest) - A port of the original DropChest plugin
 - [DropChest2](https://github.com/ShayBox/DropChest2) - A rewrite of the original DropChest plugin
@@ -18,6 +15,7 @@ Welcome to my profile!
 - [USBMC](https://github.com/ShayBox/USB-MC) - A go program for portable Minecraft
 
 #### Typescript/Javascript
+- [Mon2Cam](https://github.com/ShayBox/Mon2Cam) - Workaround for multi-monitor Discord screensharing 
 - [API](https://github.com/ShayBox/API) - My custom API backend available [here](https://api.shaybox.com/)
 - [EventEmitter-promisify](https://github.com/ShayBox/EventEmitter-promisify) - EventEmitter-promisify built-in to the event prototype 
 - [Array-equals](https://github.com/ShayBox/Array-equals) - Array-equals built-in to the array prototype 
