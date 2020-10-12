@@ -19,7 +19,9 @@ Welcome to my profile!
 - [API](https://github.com/ShayBox/API) - My custom API backend available [here](https://api.shaybox.com/)
 - [EventEmitter-promisify](https://github.com/ShayBox/EventEmitter-promisify) - EventEmitter-promisify built-in to the event prototype 
 - [Array-equals](https://github.com/ShayBox/Array-equals) - Array-equals built-in to the array prototype 
+- [TopGG-Voter](https://github.com/ShayBox/TopGG-Voter) Simple puppeteer voter for Top.gg
 
 #### Other
 - [dotfiles](https://github.com/ShayBox/dotfiles) - My linux dotfiles
-- [linux-zen-vfio](https://github.com/ShayBox/linux-zen-vfio) - My fork of linux-zen with vfio patches
+- [linux-zen-vfio](https://aur.archlinux.org/pkgbase/linux-zen-vfio/) - My fork of linux-zen with vfio patches  
+- [eaesytether](https://aur.archlinux.org/pkgbase/linux-zen-vfio/) - My easytether arch repository
