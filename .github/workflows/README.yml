@@ -1,0 +1,62 @@
+name: README
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  README:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Fetch repositories
+        run: |
+          curl -s https://api.github.com/users/shaybox/repos?per_page=100 > repos.json
+
+      - name: Generate README.md content
+        run: |
+          cat <<'EOF' | sed 's/^ *//' > README.md
+            ## GitAds Sponsored
+            [![Sponsored by GitAds](https://gitads.dev/v1/ad-serve?source=shaybox/shaybox@github)](https://gitads.dev/v1/ad-track?source=shaybox/shaybox@github)
+
+            # Projects
+          EOF
+
+          jq -r '
+            map(select(.language != null)) |
+            group_by(.language) |
+            map({
+              language: .[0].language,
+              repos: map(select(.archived == false) | {name: .name, html_url: .html_url, description: .description, stars: .stargazers_count}),
+              archived: map(select(.archived == true) | {name: .name, html_url: .html_url, description: .description, stars: .stargazers_count})
+            }) |
+            sort_by(-(.repos | length)) |
+            [
+              .[] |
+              .language as $lang |
+              "\n### \($lang)\n" +
+              (
+                .repos | map("- [\(.name)](\(.html_url)) - ★\(.stars): \(.description)") | join("\n")
+              ) +
+              (
+                if (.archived | length > 0) then
+                  "\n- Archived Projects:\n" +
+                  (
+                    .archived | map("  - [\(.name)](\(.html_url)) - \(.stars)★: \(.description)") | join("\n")
+                  )
+                else
+                  ""
+                end
+              )
+            ] | join("\n")
+          ' repos.json >> README.md
+
+      - name: Commit changes
+        run: |
+          git config user.name "Shayne Hartford"
+          git config user.email "shaybox@shaybox.com"
+          git add README.md
+          git commit --amend --no-edit
+          git push --force
